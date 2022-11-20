@@ -21,7 +21,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-red w3-card w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-left-align">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-left-align">Locations</a>
     <a href="sign-in.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Sign In</a>
   </div>
 
@@ -38,8 +38,76 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-container w3-red w3-center" style="padding:100px 16px">
   <div class="w3-display-container w3-text-white">
     <img src="ritMap02.jpg" class="w3-round" alt="RitRoadMap" style="width:100%">
-    <div class="w3-display-middle w3-button w3-green w3-circle" onclick="w3.show('#Profile')"></div>
+    <div class="w3-display-middle w3-button w3-green w3-circle" onclick="myFunction('#Profile')"></div>
   </div> 
+</div>
+
+<!-- Page Container -->
+<div id="Profile" class="w3-content w3-margin-top w3-hide" style="max-width:1400px;">
+    
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- First Profile -->
+    <div id="Profile" class="w3-third ">
+      <div class="w3-white w3-text-grey w3-card-4 ">
+       
+        <div class="w3-display-container w3-hover-shadow">
+          <img src="Adeer.jpg" style="width:100%"alt="Adira.jpg">
+          <div class="w3-display-bottommiddle w3-container w3-text-white">
+            <h2 style="text-shadow:1px 1px 0 #444">Adira</h2>
+          </div>
+        </div>
+       
+        <div class="w3-container">
+            <h3>Adeer is in your area</h3>
+            <p>Codes</p>
+            <p>Knows ASL</p>
+            <p>listen Music</p>
+        </div>
+        </div>
+    </div>
+
+    <!-- Second Profile -->
+    <div id="Profile" class="w3-third ">
+      <div class="w3-white w3-text-grey w3-card-4 ">
+       
+        <div class="w3-display-container w3-hover-shadow">
+          <img src="Adeer.jpg" style="width:100%"alt="Adira.jpg">
+          <div class="w3-display-bottommiddle w3-container w3-text-white">
+            <h2 style="text-shadow:1px 1px 0 #444">Adira</h2>
+          </div>
+        </div>
+       
+        <div class="w3-container">
+            <h3>Adeer is in your area</h3>
+            <p>Codes</p>
+            <p>Knows ASL</p>
+            <p>listen Music</p>
+        </div>
+        </div>
+    </div>
+
+    <!-- Third Profile -->
+    <div id="Profile" class="w3-third ">
+      <div class="w3-white w3-text-grey w3-card-4 ">
+       
+        <div class="w3-display-container w3-hover-shadow">
+          <img src="Adeer.jpg" style="width:100%"alt="Adira.jpg">
+          <div class="w3-display-bottommiddle w3-container w3-text-white">
+            <h2 style="text-shadow:1px 1px 0 #444">Adira</h2>
+          </div>
+        </div>
+       
+        <div class="w3-container">
+            <h3>Adeer is in your area</h3>
+            <p>Codes</p>
+            <p>Knows ASL</p>
+            <p>listen Music</p>
+        </div>
+        </div>
+    </div>
+  </div>
 </div>
 
 <!-- Footer -->
@@ -58,7 +126,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
-  var x = document.getElementById("navDemo");
+  var x = document.getElementById("Profile");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else { 
