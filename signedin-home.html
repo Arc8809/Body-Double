@@ -45,11 +45,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!-- Page Container -->
 <div id="Profile" class="w3-content w3-margin-top w3-hide" style="max-width:1400px;">
     
+  <!-- Filter -->
+  <form class="w3-container w3-card-4">
+    <h2>Filter</h2>
+    <p>
+    <input class="w3-check" onclick="mustKnowASL('#noASL')" type="checkbox">
+    <label> Must know ASL</label></p>
+  </form>
   <!-- The Grid -->
   <div class="w3-row-padding">
   
     <!-- First Profile -->
-    <div id="Profile" class="w3-third ">
+    <div class="w3-third ">
       <div class="w3-white w3-text-grey w3-card-4 ">
        
         <div class="w3-display-container w3-hover-shadow">
@@ -69,8 +76,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
 
     <!-- Second Profile -->
-    <div id="Profile" class="w3-third ">
-      <div class="w3-white w3-text-grey w3-card-4 ">
+    <div class="w3-third">
+      <div  id="noASL" class="w3-white w3-text-grey w3-card-4">
        
         <div class="w3-display-container w3-hover-shadow">
           <img src="King.jpg" style="width:100%"alt="Anderson.jpg">
@@ -89,8 +96,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
 
     <!-- Third Profile -->
-    <div id="Profile" class="w3-third ">
-      <div class="w3-white w3-text-grey w3-card-4 ">
+    <div class="w3-third">
+      <div  id="noASL" class="w3-white w3-text-grey w3-card-4">
        
         <div class="w3-display-container w3-hover-shadow">
           <img src="Jakey.jpg" style="width:100%"alt="Jake.jpg">
@@ -102,7 +109,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         <div class="w3-container">
             <h3>Comfy chairs are comfy! </h3>
             <p>Engeneering</p>
-            <p>Doesn't Know ASL</p>
+            <p>Knows ASL</p>
             <p>Listens to Music</p>
         </div>
         </div>
@@ -127,6 +134,15 @@ function myFunction() {
   } else { 
     x.className = x.className.replace(" w3-show", "");
   }
+}
+
+function mustKnowASL() {
+  var x = document.getElementById("noASL");
+    if (x.className.indexOf("w3-hide") == -1) {
+      x.className += " w3-hide";
+    } else { 
+      x.className = x.className.replace(" w3-hide", "");
+    }
 }
 </script>
 
