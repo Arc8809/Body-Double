@@ -59,8 +59,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <div class="w3-third ">
       <div class="w3-white w3-text-grey w3-card-4 ">
        
-        <div class="w3-display-container w3-hover-shadow">
+        <div class="w3-display-container w3-hover-shadow w3-button"onclick="copyFunction('#Socials')">
           <img src="Adeer.jpg" style="width:100%"alt="Adira.jpg">
+
           <div class="w3-display-bottommiddle w3-container w3-text-white">
             <h2 style="text-shadow:1px 1px 0 #444">Adira</h2>
           </div>
@@ -72,14 +73,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
             <p>Knows ASL</p>
             <p>Listen to Music</p>
         </div>
+        <div id = "Socials" class= " w3-card-2 w3-hide w3-padding-20 w3-contaier">
+      
+          <div class="w3-bar w3-blue w3-center">
+            <h3>Socials</h3>
+          </div>
+          <p> E-Mail: NotMyEmail@rit.edu</p>
+          <p> Instagram: @RealInsta</p>
+          <p> Discord: ILikeSleep#1234</p>
+      
         </div>
+        
+      </div>
     </div>
 
     <!-- Second Profile -->
     <div class="w3-third">
       <div  id="noASL" class="w3-white w3-text-grey w3-card-4">
        
-        <div class="w3-display-container w3-hover-shadow">
+        <div class="w3-display-container w3-hover-shadow w3-button">
           <img src="King.jpg" style="width:100%"alt="Anderson.jpg">
           <div class="w3-display-bottommiddle w3-container w3-text-white">
             <h2 style="text-shadow:1px 1px 0 #444">Anderson</h2>
@@ -99,7 +111,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <div class="w3-third">
       <div  id="noASL" class="w3-white w3-text-grey w3-card-4">
        
-        <div class="w3-display-container w3-hover-shadow">
+        <div class="w3-display-container w3-hover-shadow w3-button">
           <img src="Jakey.jpg" style="width:100%"alt="Jake.jpg">
           <div class="w3-display-bottommiddle w3-container w3-text-white">
             <h2 style="text-shadow:1px 1px 0 #444">Jake</h2>
@@ -114,7 +126,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         </div>
         </div>
     </div>
+  
   </div>
+  
 </div>
 
 <!-- Footer -->
@@ -129,6 +143,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
   var x = document.getElementById("Profile");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function copyFunction() {
+  var x = document.getElementById("Socials");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else { 
